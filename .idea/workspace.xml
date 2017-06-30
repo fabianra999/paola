@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9e06f473-d488-43a7-a8ef-dd70af4741b3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/modules/footer.php" afterPath="$PROJECT_DIR$/view/modules/footer.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -724,7 +723,7 @@
       <option name="presentableId" value="Default" />
       <updated>1498826679374</updated>
       <workItem from="1498826681017" duration="1938000" />
-      <workItem from="1498828648034" duration="8977000" />
+      <workItem from="1498828648034" duration="9085000" />
     </task>
     <task id="LOCAL-00001" summary="ajustes generales">
       <created>1498838457319</created>
@@ -733,11 +732,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498838457319</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ajustes img fondo grande">
+      <created>1498840653979</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1498840653979</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10915000" />
+    <option name="totallyTimeSpent" value="11023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
@@ -807,7 +813,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ajustes generales" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajustes generales" />
+    <MESSAGE value="ajustes img fondo grande" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustes img fondo grande" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
