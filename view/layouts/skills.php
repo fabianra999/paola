@@ -1,4 +1,4 @@
-<div class="section" data-anchor="skills">
+<div class="section" data-anchor="skills" style="display: none">
     <div class="content">
         <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT ME</h1>
         <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, I'm Brad Engelhardt! I'm a Silicon Valley based Web

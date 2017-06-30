@@ -25,15 +25,31 @@
   margin-right: auto;
   max-width: 380px;
   padding: 1px 1px 5px 5px;
+
+  img{
+    width: 60%;
+    height: auto;
+    margin-bottom: 3rem;
+  }
 }
 
 .aboutme {
-  background: url("https://s3-us-west-2.amazonaws.com/files.bradengelhardt.com/brad-bg-main.jpg") no-repeat;
+  background: url(#{$path-img}background/645.jpg) no-repeat;
   background-size: cover;
+  // icono mouse
+  #moveDown{
+    width: 30px;
+    position: absolute;
+    bottom: 2%;
+    cursor: pointer;
+    img{
+      width: 100%;
+    }
+  }
 }
 
 .aboutme p {
-  color: white;
-  font-weight: 100;
-  font-size: 17.4px;
+  color: $negro;
+  font-weight: 500;
+  font-size: 17.5px;
 }

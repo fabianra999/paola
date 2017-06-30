@@ -16,7 +16,9 @@ var gulp = require('gulp'),
 	flatten = require('gulp-flatten'),
 	gulpFilter = require('gulp-filter'),
 	mainBowerFiles = require('main-bower-files'),
-	wiredep = require('wiredep').stream;
+	wiredep = require('wiredep').stream,
+	clean = require('gulp-clean');
+
 
 /***************************************** 
 	browser-sync 
@@ -50,7 +52,7 @@ gulp.task('bs-reload', function () {
 ******************************************/
 gulp.task('images', function(){
 	gulp.src('src/images/**/*')
-		.pipe(cache(imagemin({ optimizationLevel: 9, progressive: true, interlaced: true })))
+		.pipe(cache(imagemin({ optimizationLevel: 7, progressive: true, interlaced: true })))
 		.pipe(gulp.dest('dist/images/'))
 });
 
@@ -202,13 +204,6 @@ gulp.task('componentsJs', function(){
 });
 
 /***************************************** 
-	limpiar dis
-	- Eliminar todo directorio y archivo de dist/
-	- Tarea $ gulp clean.
-******************************************/
-//gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
-
-/***************************************** 
 	server
 	- Ejecuta las tareas: server, styles, mixCss, tipeScript, scripts, componentsJs, images, bs-reload
 	- Tarea $ gulp server.
@@ -225,12 +220,31 @@ gulp.task('server', ['browser-sync'], function(){
 	gulp.watch("*.html", ['bs-reload']);
 });
 
+/*****************************************
+ limpiar dis
+ - Eliminar todo directorio y archivo de dist/
+ - Tarea $ gulp clean.
+ ******************************************/
+gulp.task('clean', ['clean-img', 'clean-js', 'clean-css'], function(){ });
+gulp.task('clean-img', function () {
+    return gulp.src('dist/images/**/', {read: false})
+        .pipe(clean());
+});
+gulp.task('clean-js', function () {
+    return gulp.src('dist/scripts/**/*.js', {read: false})
+        .pipe(clean());
+});
+gulp.task('clean-css', function () {
+    return gulp.src('dist/styles/**/*.css', {read: false})
+        .pipe(clean());
+});
+
 /***************************************** 
 	build
 	- Ejecuta las tareas: server, styles, mixCss, tipeScript, scripts, componentsJs, images, bs-reload.
 	- Reconstruir los archivos generados por las tareas.
 	- Tarea $ gulp build.
-******************************************/
+*****************************************/
 gulp.task('build', ['images', 'styles', 'mixCss', 'tipeScript', 'scripts', 'componentsJs'], function(){ });
 
 

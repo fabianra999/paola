@@ -227,17 +227,28 @@ mayor problema por fload superior.
   margin-right: auto;
   max-width: 380px;
   padding: 1px 1px 5px 5px; }
+  .opaque-bg img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 3rem; }
 
 .aboutme {
-  background: url("https://s3-us-west-2.amazonaws.com/files.bradengelhardt.com/brad-bg-main.jpg") no-repeat;
+  background: url(../images/background/645.jpg) no-repeat;
   -moz-background-size: cover;
     -o-background-size: cover;
        background-size: cover; }
+  .aboutme #moveDown {
+    width: 30px;
+    position: absolute;
+    bottom: 2%;
+    cursor: pointer; }
+    .aboutme #moveDown img {
+      width: 100%; }
 
 .aboutme p {
-  color: white;
-  font-weight: 100;
-  font-size: 17.4px; }
+  color: #000000;
+  font-weight: 500;
+  font-size: 17.5px; }
 
 /* Nav Screen */
 .nav-screen {

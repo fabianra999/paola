@@ -197,7 +197,7 @@ $(document).ready(function () {
   })(jQuery);
 
   // input text for typing animation
-  $("#holder").writeText("WEB DESIGNER + FRONT-END DEVELOPER");
+  $("#holder").writeText("Desarrollo SQL + Consultor IT + ERP Novasoft");
 
   // initialize wow.js
   new WOW().init();
@@ -259,7 +259,7 @@ $(document).ready(function () {
           $(this).css('opacity', '1');
         });
         $('.header-links a').each(function () {
-          $(this).css('color', 'white');
+          $(this).css('color', 'black');
         });
         $('.header-links').css("background-color", "transparent");
       } else if (index != 1) {

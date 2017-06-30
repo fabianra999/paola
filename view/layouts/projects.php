@@ -1,4 +1,4 @@
-<div class="section" data-anchor="projects">
+<div class="section" data-anchor="projects" style="display: none">
     <div class="content-slide">
         <div class="slide">
             <h1 class="wow fadeInDown" data-wow-delay="0.2s">XFAIRE</h1>
