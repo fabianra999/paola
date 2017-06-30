@@ -1,4 +1,4 @@
-<div class="section fp-auto-height">
+<div class="section fp-auto-height" style="display: none">
     <div class="footer">
         <p>CONNECT WITH ME</p>
         <div class="social-links">
