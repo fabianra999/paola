@@ -1,0 +1,56 @@
+/* general styles */
+
+body {
+  font-family: 'Raleway', sans-serif !important;
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+
+  h1 {
+    color: #FF6363;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 20px;
+    color: #484848;
+  }
+}
+
+.section {
+  text-align: center;
+}
+
+.skillbar {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.display {
+  display: block;
+}
+
+/* flash alert styles */
+
+.flash-container {
+  width: 100%;
+  position: fixed;
+  z-index: 700;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.alert {
+  text-align: center !important;
+  width: 500px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  color: #211809 !important;
+}

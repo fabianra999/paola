@@ -1,0 +1,61 @@
+/* Skill bars */
+
+.container-skillbar {
+  width:100%;
+  padding-top:30px;
+  padding-right: 2%;
+  padding-left: 2%;
+  height:auto;
+  overflow:none;
+}
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:15px;
+  width:100%;
+  background:#efefef;
+  height:30px;
+  border-radius:3px;
+  transition:0.4s linear;
+  transition-property:width, background-color;
+}
+
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+  width:110px;
+  font-weight:bold;
+  font-size:13px;
+  color:#fff;
+  background:#6adcfa;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.15);
+  padding:0 20px;
+  height:30px;
+  line-height:30px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  height:30px;
+  width:0px;
+  border-radius:3px;
+}
+
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:11px;
+  height:30px;
+  line-height:30px;
+  color:#ffffff;
+  color:rgba(0, 0, 0, 0.5);
+}
