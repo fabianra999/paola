@@ -28,14 +28,12 @@
         <?php include 'view/layouts/contact.php'; ?>
         <!-- end section -->
 
+		<!--footer-->
+		<?php include 'view/modules/footer.php'; ?>
     </div>
     <!-- end fullpage -->
 
-    <script src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/wow.min.js"></script>
 
-
-    <!--footer-->
-    <?php include 'view/modules/footer.php'; ?>
     <!--scripts-->
     <?php include 'view/modules/scripts.php'; ?>
     </body>

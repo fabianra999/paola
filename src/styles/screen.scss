@@ -1,3 +1,8 @@
+/****** Libs ******/
+@import '../../bower_components/bootstrap/scss/bootstrap'; // bootstrap
+@import '../../bower_components/slick-carousel/slick/slick.scss'; // slick
+@import '../../bower_components/slick-carousel/slick/slick-theme.scss'; // slick
+
 /****** Base ******/
 @import 'base/variables';
 @import 'base/placeholder';
@@ -33,3 +38,7 @@
 
 /****** Mobile ******/
 @import 'mobile/m-screen';
+
+
+
+@CHARSET "ISO-8859-1";
