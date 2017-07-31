@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h1 class="footerView__title">Información de contacto</h1>
+                  <h1 class="footerView__title"><?php echo __('Información de contacto', $lang) ?></h1>
 					<br>
 					<br>
 					<br>
@@ -45,10 +45,10 @@
 				<div class="col-12 col-sm-4">
 					<div class="footer__general">
 						<h1 data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">Paola Cantor</h1>
-						<h2  data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">Consultor IT</h2>
+                      <h2  data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;"><?php echo __('Consultor IT', $lang) ?></h2>
 						<hr>
 						<div class="info">
-							<div class="tel"><span>Tel:</span>3132807570</div>
+                          <div class="tel"><span><?php echo __('Tel:', $lang) ?></span>3132807570</div>
 							<div class="email"><span>Mail:</span>Ingeniera@paolacantor.com</div>
 						</div>
 					</div>

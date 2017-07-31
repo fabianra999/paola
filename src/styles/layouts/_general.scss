@@ -21,6 +21,15 @@ body {
   }
 }
 
+.nav-header .header-links ul li a {
+  display: inline-block;
+  margin-right: 5px;
+  img{
+    width: 20px;
+    height: auto;
+  }
+
+}
 .section {
   text-align: center;
 }

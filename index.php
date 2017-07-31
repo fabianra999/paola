@@ -1,3 +1,12 @@
+<?php
+require('languages.php');
+
+$lang = null;
+if ( isset($_GET['lang']) ){
+  $lang = $_GET['lang'];
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <!--head-->
