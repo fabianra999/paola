@@ -1,22 +1,52 @@
 <?php
-$destino = "fabianra999@gmail.com";
-$name =  $_POST["name"];
-$email =  $_POST["email"];
-$mensage =  $_POST["mensage"];
+/**
+ * Formulario
+ *  $destino : correo destino;
+ *  $name,$email,$email,$asunto,$mensage : campos formulario;
+ *  $date : Fecha de envio;
+ */
+$destino = 'fabianra999@gmail.com';
+$name = $_POST['name'];
+$email = $_POST['email'];
+$mensage = $_POST['mensage'];
+$date = date('d/m/Y', time());
 
-$email_subject = "Contacto web Paola.com:  $name";
-$email_body = "Has recibido un mensaje nuevo. "." Aquí están los detalles: " ."\nNombre: " . $name . "\nCorreo: " . $email . "\nMensage: " . $mensage;
+/**
+ * Header Email
+ */
+$header = 'From: ' . $email . "\r\n";
+$header .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+$header .= "Mime-Version: 1.0 \r\n";
+$header .= "Content-Type: text/plain";
+
+/**
+ * Body Email
+ */
+$mensaje = "Este mensaje fue enviado por " . $name . ".\r\n";
+$mensaje .= "Su e-mail es: " . $email . ".\r\n";
+$mensaje .= "Enviado el: " . $date . ".\r\n";
+$mensaje .= "Su asunto: " . $asunto . ".\r\n";
+$mensaje .= "Mensaje: " . $mensage . ".\r\n";
+
+/**
+ * Asunto Email
+ */
+$asuntoMail = 'Contacto sitio Web | ' . $name;
+
+/**
+ * Envio Email
+ */
+//mail($destino, $asuntoMail, utf8_decode($mensaje), $header);
+
+//header('location:index.php');
 
 
-$result = mail($destino, "q pasa: ", $email_body);
-if(!$result) {
-	print "<p class='Error'>Problem in Sending Mail.</p>";
-	echo "Error";
-	header("Location:index.php");
+$result = mail($destino, $asuntoMail, utf8_decode($mensaje), $header);
+if (!$result) {
+    //header("Location:contactoError.php");
+    header("Location:index.php");
 } else {
-	print "<p class='success'>Contact Mail Sent.</p>";
-	echo "Success";
-	header("Location:index.php");
+    //header("Location:contactoSuccess.php");
+    header("Location:index.php");
 }
-
 ?>

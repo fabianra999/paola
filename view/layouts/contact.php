@@ -44,7 +44,7 @@
 									<input type="text" class="form-control" id="human" name="human" placeholder="">
 								</div>
 								<div class="wow fadeInUp" data-wow-delay="1s">
-                                  <button type="submit" id="submit" name="submit" class="btn btn-lg"><?php echo __('ENVIAR MENSAJE', $lang) ?></button>
+                                  <button type="submit" class="btn btn-lg"><?php echo __('ENVIAR MENSAJE', $lang) ?></button>
 								</div>
 							</div>
 						</div>
