@@ -4,9 +4,9 @@ $texts = array(
   'Contacto' => 'Contact',
   'Portafolio' => 'Portfolio',
   'Sobre Mi' => 'About me',
-  'Holamundo123' => 'About me',
-
-  // About
+  'Ingeniera de Sistemas con más de 10 años de experiencia en prestacion de servicios de Consultoria IT, soy un aliada enfocada a suministrar soluciones, realizasndo aprovechamiento de los recursos tecnologicos, o de ser necesario implantando nuevos. <br><br>  Soy una persona con sólidos principios éticos, dinámica, proactiva y con gran facilidad para el aprendizaje. Excelentes relaciones interpersonales, desarrollando plenamente el trabajo en equipo.<br><br>Alto sentido de pertenencia y manejo de información. Adaptabilidad al cambio y un alto grado de responsabilidad y cumplimiento de los deberes profesionales para asumir responsabilidades.<br><br>  Conocimiento en implantación de sistemas ERP, Programación en Visual .NET y Visual Fox, manejo de Bases de Datos en SQL Server e Imprementacion de Procesos. perfil'
+  => 'Systems Engineer with more than 10 years of experience in IT consulting services, I am an ally focused on providing solutions, making use of technological resources, or being necessary to implement new ones.<br><br> I am a person with strong ethical principles, dynamic, proactive and with great ease for learning.<br><br> Excellent interpersonal relationships, fully developing teamwork. High sense of ownership and management of information. Adaptability to change and a high degree of responsibility and fulfillment of professional duties to assume responsibilities.Knowledge in ERP system implementation, Visual .NET and Visual Fox programming, Database Management in SQL Server and Process Imprementation. profile',
+    // About
   'SOBRE MI' => 'ABOUT ME',
   'Consultor IT' => 'IT consultant',
   'Tel:' => 'Phone: +57',

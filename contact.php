@@ -5,10 +5,11 @@
  *  $name,$email,$email,$asunto,$mensage : campos formulario;
  *  $date : Fecha de envio;
  */
-$destino = 'fabianra999@gmail.com';
-$name = $_POST['name'];
-$email = $_POST['email'];
-$mensage = $_POST['mensage'];
+$destino = 'ingeniera@paolacantor.com';
+$name = $_POST['fName'];
+$email = $_POST['fEmail'];
+//$tel = $_POST['fTel'];
+$mensage = $_POST['fMensaje'];
 $date = date('d/m/Y', time());
 
 /**
@@ -23,6 +24,7 @@ $header .= "Content-Type: text/plain";
  * Body Email
  */
 $mensaje = "Este mensaje fue enviado por " . $name . ".\r\n";
+//$mensaje .= "Numero telefonico: " . $tel . ".\r\n";
 $mensaje .= "Su e-mail es: " . $email . ".\r\n";
 $mensaje .= "Enviado el: " . $date . ".\r\n";
 $mensaje .= "Su asunto: " . $asunto . ".\r\n";
@@ -31,7 +33,7 @@ $mensaje .= "Mensaje: " . $mensage . ".\r\n";
 /**
  * Asunto Email
  */
-$asuntoMail = 'Contacto sitio Web | ' . $name;
+$asuntoMail = 'Contacto sitio Web ACestrategiascf | ' . $name;
 
 /**
  * Envio Email
@@ -43,10 +45,12 @@ $asuntoMail = 'Contacto sitio Web | ' . $name;
 
 $result = mail($destino, $asuntoMail, utf8_decode($mensaje), $header);
 if (!$result) {
-    //header("Location:contactoError.php");
-    header("Location:index.php");
+    //print "<p class='Error'>Problem in Sending Mail.</p>";
+    // echo "Error";
+    header("Location:contactoError.php");
 } else {
-    //header("Location:contactoSuccess.php");
-    header("Location:index.php");
+    //print "<p class='success'>Contact Mail Sent.</p>";
+    //echo "Success";
+    header("Location:contactoSuccess.php");
 }
 ?>
